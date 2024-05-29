@@ -1,0 +1,141 @@
+/* styles.css */
+
+/* Reset some default browser styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color and font styles */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(131, 172, 180);
+    color: #356776;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+/* Header styles */
+header {
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/dhezn7g-6adc16dd-8360-430f-9444-66a414b816e2.png/v1/fit/w_828,h_674,q_70,strp/planet_snowstar_by_koku_draws_dhezn7g-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA0MyIsInBhdGgiOiJcL2ZcL2FhOWEwMzA1LTAwOTYtNDViZC05MGIyLWE3YTk2MjYxNDE5YVwvZGhlem43Zy02YWRjMTZkZC04MzYwLTQzMGYtOTQ0NC02NmE0MTRiODE2ZTIucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.IxgoOPCeWbSTjX_lqn-hFUP0FK7MCuaR17ERHueutLw);
+    background-size: 1345px;
+    color: #356776;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    margin-left: 70px; 
+    margin-right: 70px;
+    text-align: center;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    justify-content: center; /* Center the navigation links horizontally */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Use flexbox for the list items */
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #356776;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styles */
+main {
+    margin: 20px 0;
+}
+
+section {
+    background:linear-gradient(to top, #c4baa9, #aad1d6);
+    padding: 20px;
+    margin-bottom: 30px;
+    margin-left: 70px; 
+    margin-right: 70px;
+    border-radius: 5px;
+}
+/* Home section styles */
+#home {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    height: 300px; /* Set a height for the section */
+}
+
+#home h2, #home p {
+    margin: 10px 0; /* Add some spacing between the elements */
+}
+/* Gallery styles */
+#gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 20px; /* Adjust the gap as needed */
+}
+
+.gallery-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+    
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+/* Speedpaint tutorial styles */
+#speedpaint-tutorial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#speedpaint-tutorial iframe {
+    margin-top: 20px; /* Optional: Add some space between the elements */
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
