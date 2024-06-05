@@ -59,8 +59,8 @@ main {
 
 section {
     background:linear-gradient(to top, #c4baa9, #aad1d6);
-    padding: 20px;
-    margin-bottom: 30px;
+    padding: 80px;
+    margin-bottom: 20px;
     margin-left: 70px; 
     margin-right: 70px;
     border-radius: 5px;
@@ -74,8 +74,20 @@ section {
     height: 300px; /* Set a height for the section */
 }
 
-#home h2, #home p {
-    margin: 10px 0; /* Add some spacing between the elements */
+#home h2 {
+    margin-bottom: 20px 0; /* Add some spacing between the elements */
+    align-items: center;
+    text-align: center;
+}
+#home p {
+    margin-bottom: 20px 0; /* Add some spacing between the elements */
+    align-items: center;
+    text-align: center;
+}
+#home h4 {
+    margin-bottom: 20px 0; /* Add some spacing between the elements */
+    align-items: center;
+    text-align: center;
 }
 /* Gallery styles */
 #gallery {
@@ -106,6 +118,21 @@ section {
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.float-image {
+    animation: float 3s ease-in-out infinite;
 }
 
 #gallery img {
@@ -138,4 +165,62 @@ section {
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+.centered-footer {
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 89.6%;
+    margin-left: 70px; 
+    background-color: #c4baa9; /* Optional: Change background color */
+    padding: 10px 0; /* Optional: Add padding for better spacing */
+}
+
+.centered-footer p {
+    margin: 0; /* Remove default margins */
+}
+.centered-section {
+    text-align: center;
+    width: 86.6%;
+    margin: 0 auto;
+    padding: 20px; /* Optional: Add padding for better spacing */
+}
+
+.centered-section h2,
+.centered-section p {
+    margin: 0;
+    padding: 10px 0; /* Optional: Adjust spacing between elements */
+}
+.image-text-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* Adjust the gap between items */
+}
+
+.image-text-list .item {
+    display: flex;
+    align-items: center;
+    gap: 100px; /* Adjust the gap between image and text */
+}
+
+.image-text-list img {
+    width: 200px; /* Adjust the image width */
+    height: auto;
+    margin-left: 30px;
+    margin-bottom: 2%;
+}
+
+.image-text-list p {
+    margin: 0px;
+}
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adjust the gap between heading and description */
+}
+
+.image-text-list h3,
+.image-text-list p {
+    margin: 0;
 }
