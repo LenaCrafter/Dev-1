@@ -224,3 +224,32 @@ section {
 .image-text-list p {
     margin: 0;
 }
+.youtube-audio {
+    width: 100%;
+    max-width: 300px;
+    height: 50px; /* Adjust the height to hide the video */
+    margin: 20px 0;
+    overflow: hidden; /* Hide the overflowing video */
+    position: relative; /* Ensures that the iframe positioning works correctly */
+}
+
+.youtube-audio iframe {
+    position: absolute;
+    top: -5000px; /* Position the iframe off-screen */
+}
+.snowflake {
+    position: absolute;
+    top: -10px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    pointer-events: none;
+    animation: fall linear;
+    animation-timing-function: cubic-bezier(5.25, 8.1, 9.25, 1);
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(1000vh);
+    }
+}
